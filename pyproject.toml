@@ -1,0 +1,22 @@
+[project]
+name = "secure-ai-application"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "imad2702", email = "imaduddin2702@gmail.com" }
+]
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "fastmcp>=4.1.4",
+    "langchain[mcp]>=1.4.7",
+    "langchain-mcp-adapters",
+    "langchain-openai>=1.7.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+secure-ai-application = "secure_ai_application:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.5"]
+build-backend = "uv_build"
